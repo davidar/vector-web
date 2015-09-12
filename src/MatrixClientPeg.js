@@ -21,7 +21,7 @@ var Matrix = require("matrix-js-sdk");
 
 var matrixClient = null;
 
-var localStorage = window.localStorage;
+var localStorage = null;//window.localStorage;
 
 function deviceId() {
     var id = Math.floor(Math.random()*16777215).toString(16);

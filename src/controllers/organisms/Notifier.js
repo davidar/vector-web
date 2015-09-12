@@ -68,8 +68,8 @@ module.exports = {
                 });
             }
 
-            if (!global.localStorage) return;
-            global.localStorage.setItem('notifications_enabled', 'true');
+            //if (!global.localStorage) return;
+            //global.localStorage.setItem('notifications_enabled', 'true');
 
             if (this.havePermission) {
                 dis.dispatch({
@@ -79,8 +79,8 @@ module.exports = {
             }
         }
         else {
-            if (!global.localStorage) return;
-            global.localStorage.setItem('notifications_enabled', 'false');
+            //if (!global.localStorage) return;
+            //global.localStorage.setItem('notifications_enabled', 'false');
             dis.dispatch({
                 action: "notifier_enabled",
                 value: false
@@ -93,7 +93,7 @@ module.exports = {
     isEnabled: function() {
         if (!this.havePermission()) return false;
 
-        if (!global.localStorage) return true;
+        if (null && !global.localStorage) return true;
 
         var enabled = global.localStorage.getItem('notifications_enabled');
         if (enabled === null) return true;

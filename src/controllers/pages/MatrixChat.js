@@ -94,7 +94,7 @@ module.exports = {
                     logged_in: false,
                     ready: false
                 });
-                if (window.localStorage) {
+                if (null && window.localStorage) {
                     window.localStorage.clear();
                 }
                 Notifier.stop();
