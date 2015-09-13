@@ -164,7 +164,7 @@ module.exports = React.createClass({
                         { loader }
                         {this.state.errorText}
                 </div>
-                <a className="mx_Login_create" onClick={this.showRegister} href="#">Create a new account</a>
+                {/*<a className="mx_Login_create" onClick={this.showRegister} href="#">Create a new account</a>*/}
             </div>
         );
     },
@@ -176,6 +176,16 @@ module.exports = React.createClass({
                     <div className="mx_Login_logo">
                         <img  src="img/logo.png" width="249" height="78" alt="vector"/>
                     </div>
+<h1>IPFS Realtime Chat</h1>
+<h2>You're almost there</h2>
+<p>The IPFS chatroom is currently hosted on<br/>
+<code>irc://irc.freenode.org/#ipfs</code></p>
+<p>This is <a href="https://vector.im">Vector</a>, a web-based <a href="https://matrix.org">Matrix.org</a> client, which can be used to connect to the IRC network.</p>
+<p>If you don't yet have a Matrix account, you'll need to <a href="https://matrix.org/beta/#/register">register</a>. It should only take a second, and you only need to do it once.</p>
+<p>If this is your first time using Matrix, join<br/>
+<code>#freenode_#ipfs:matrix.org</code><br/>
+after you've signed in.</p>
+<p>Of course, you're more than welcome to join <code>#ipfs</code> with your own favourite IRC client.</p>
                     {this.loginContent()}
                 </div>
             </div>
